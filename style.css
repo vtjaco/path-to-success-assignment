@@ -1,0 +1,576 @@
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kavoon&display=swap');
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+:root {
+    --color-blue: #484FB7;
+    --color-pink: #D9526F;
+    --color-yellow: #E9BB57;
+    --color-teal: #4CA7C0;
+    --color-lavender: #6B8FE7;
+    --color-white: #ffffff;
+    --color-dark-gray: #1E1E1E;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Kavoon', cursive;
+}
+
+/* -------------------- GLOBAL STYLES --------------------------------------- */
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-blue);
+    color: var(--color-dark-gray);
+    line-height: 1.6;
+    margin-bottom: 30px;
+   
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------- HEADER STYLES --------------------------------------- */
+.head-inner {
+    text-align: center;
+    padding: 50px 10px 0;
+    background-color: var(--color-lavender);
+    color: var(--color-white);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    z-index: 9;
+    position: relative;
+}
+header {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+header h1 {
+    font-family: var(--font-secondary);
+    font-size: 3em;
+    color: var(--color-white);
+    margin: 0;
+}
+
+header .subheading {
+    font-size: 12px;
+    font-style: italic;
+    background-color: var(--color-pink);
+    padding: 2px 8px;
+    color: var(--color-white);
+    margin-top: 0px;
+    position: relative;
+    padding-top: 18px;
+    bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+}
+
+/* -------------------- NAVBAR STYLES --------------------------------------- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+
+  .navbar {
+    background-color: var(--color-yellow);
+    background-color: #F4D03F;
+    padding: 10px 0;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px 10px;
+    z-index: 99999;
+  }
+  .navbar a {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    color: var(--color-dark-gray);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    /* background-color: var(--color-white); */
+    color: var(--color-white);
+}
+
+/* -------------------- SERVICES SECTION ------------------------------------ */
+.services {
+    background-color: var(--color-blue);
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.services h2 {
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    color: var(--color-white);
+    /* margin-bottom: 20px; */
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: var(--color-white);
+    color: var(--color-dark-gray);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-box img {
+    width: 50px;
+    height: 50px;
+    /* margin-bottom: 10px; */
+}
+
+.service-box h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--color-blue);
+}
+
+/* -------------------- WHY CHOOSE US SECTION ------------------------------- */
+.why-us {
+    background-color: var(--color-pink);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    color: var(--color-white);
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+.why-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.why-box {
+    background: var(--color-white);
+    padding: 20px 20px 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1em;
+    color: var(--color-dark-gray);
+    flex: 1;
+    text-align: center;
+    max-width: 200px;
+}
+
+/* -------------------- PRICING SECTION ------------------------------------- */
+.pricing {
+    background-color: var(--color-blue);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    color: var(--color-white);
+    /* margin-bottom: 20px; */
+    text-align: left;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+ /* .pricing-box {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.pricing-box h3 {
+    font-size: 1.2em;
+    /* margin-bottom: 15px; */
+    color: var(--color-yellow);
+    font-family: var(--font-primary);
+    
+}
+
+.pricing-box table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.pricing-box thead th {
+    background-color: var(--color-yellow);
+    color: var(--color-dark-gray);
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.pricing-box tbody td {
+    padding: 10px;
+    font-size: 1em;
+    color: var(--color-dark-gray);
+    border: 1px solid #e9bb56;
+    background-color: #fff;
+}
+
+.pricing-box tbody td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* -------------------- CONTACT SECTION ------------------------------------- */
+.contact {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    /* margin-bottom: 20px; */
+}
+
+.contact p {
+    font-size: 16px;
+    /* margin-bottom: 20px; */
+}
+
+.contact .button {
+    background-color: var(--color-white);
+    /* color: var(--color-pink); */
+    color: black;
+    padding: 10px 70px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgb(0 0 0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact .button:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* -------------------- FOOTER SECTION -------------------------------------- */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6a8fe7;
+    color: var(--color-white);
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: var(--color-white);
+    text-decoration: underline;
+    /* font-weight: bold; */
+    
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* -------------------- custom css -------------------------------------- */
+
+/* Header */
+#services h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Container for Columns */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive Layout */
+}
+
+/* Individual Columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; /* Ensures Equal Spacing */
+}
+
+/* Box Styling */
+.service-box {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.service-box .icon {
+    max-width: 100px;
+    /* margin-bottom: 10px; */
+}
+
+/* Text Styling */
+.service-box h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-align: left;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+    text-align: left;
+}
+/* Section Styling */
+.section-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFC107; /* Adjust to your preferred color */
+    text-align: center;
+}
+
+/* Grid and Column Styling */
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.service-box {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+.service-box img {
+    width: 100px;
+    height: 100px;
+}
+.why-box:nth-child(1) {
+    background-color: #4ca7c0;
+}
+
+.why-box:nth-child(2) {
+    background-color: #6a8fe7;
+}
+
+.why-box:nth-child(3) {
+    background-color: #e9bb56;
+}
+
+.why-box:nth-child(4) {
+    background-color: white;
+}
+
+
+.contact {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */ /* Align items vertically center */
+    gap: 50px; /* Add space between the text and button */
+    padding: 20px; /* Add some padding */
+    /* background-color: #f9f9f9; */ /* Optional: Background color */
+}
+
+.text-content {
+    max-width: 61%; /* Adjust width of the text block */
+    text-align: left;
+}
+
+.text-content h2,
+.text-content p {
+    margin: 0; /* Remove default margin */
+}
+
+.button-container {
+    display: flex;
+    align-items: center; /* Align the button vertically center */
+}
+
+.button {
+    text-decoration: none; /* Remove underline from the link */
+    padding: 10px 70px; /* Add some padding for the button */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+/* General Section Styling */
+.pricing {
+    /* background-color: #4338CA; */ /* Matching purple background */
+    padding: 40px 20px;
+    color: #ffffff;
+    /* font-family: Arial, sans-serif; */
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Pricing Grid Styling */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pricing-box {
+    /* background-color: #FFE082; */ /* Gold/yellow background */
+    border-radius: 10px;
+    padding: 20px;
+    color: #000000;
+    text-align: left;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+tbody td {
+    padding: 8px 0;
+    font-size: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+@media (min-width: 1024px) { /* Adjust the width threshold as needed */
+    main {
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    .pricing-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-container {
+        flex-direction: column;
+    }
+    
+    section#contact {
+        flex-direction: column;
+    }
+    
+    section#contact .text-content {
+        max-width: 100%;
+    }
+    
+    section#contact {}
+    
+    .button-container {
+        margin: 0 auto;
+    }
+    
+    nav.navbar {
+        text-align: center;
+    }
+    
+    .head-inner {
+        margin-top: 32px;
+    }
+    .pricing-box table {
+        margin-left: 0 ;
+    }
+    
+    }
